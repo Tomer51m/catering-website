@@ -1,0 +1,88 @@
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+.header {
+    height: 85vh;
+    position: relative;
+    background-image: 
+    linear-gradient(
+        to bottom,
+        rgba(231, 231, 231, 0.637),
+        rgba(119, 119, 119, 0.664)
+    ),
+    url('https://www.gffoodservice.com.au/content/uploads/2017/03/1896x1066.jpg');
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 80vw 100%, 0 100%);
+
+    .title-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    
+        .header-title {
+            color: whitesmoke;
+            margin-bottom: 40px;
+
+            .title-main {
+                display: block;
+                font-size: 90px;
+                animation: moveInLeft 2s ease-out;
+            }
+            
+            .title-sub {
+                display: block;
+                font-size: 60px;
+                letter-spacing: 11.5px;
+                animation: moveInRight 2s ease-out;
+            }
+        }
+    }
+}
+
+.btn {
+    color: grey;
+    padding: 8px 50px;
+    border-radius: 3px;
+    transition: all .1s;
+
+    &:link, &:visited {
+    display: inline-block;
+    text-decoration: none;
+    background-color: whitesmoke;
+    margin: 0 20px;
+    }
+
+    &:hover {
+        transform: translateY(-1px);
+    }
+    &:active {
+        transform: translateY(1px);
+    }
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translate(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
