@@ -1,0 +1,22 @@
+{
+  "name": "ochelim",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:scss": "node-sass scss/main.scss css/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tomer51m/catering-website.git"
+  },
+  "author": "tomermatmon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tomer51m/catering-website/issues"
+  },
+  "homepage": "https://github.com/Tomer51m/catering-website#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
